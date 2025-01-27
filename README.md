@@ -176,9 +176,6 @@
       <a href="#" onclick="showDiscussion('geography')">地理</a>
       <a href="#" onclick="showDiscussion('history')">歷史</a>
     </div>
-    <div>
-      <button onclick="logout()">登出</button>
-    </div>
   </div>
 
   <!-- 登入頁面 -->
@@ -329,14 +326,6 @@
   } else {
     alert('用戶名稱或密碼錯誤');
   }
-    }
-
-    function logout() {
-      currentUser = null;
-      alert('已登出');
-      document.getElementById('discussion-container').style.display = 'none';
-      document.getElementById('login-container').style.display = 'block';
-      document.getElementById('navbar').style.display = 'none';
     }
 
     function showDiscussion(subject) {
