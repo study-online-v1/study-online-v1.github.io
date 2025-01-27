@@ -1,7 +1,8 @@
   function showDiscussion(subject) {
-  // 隱藏所有討論區
   const discussions = document.querySelectorAll('.discussion');
   discussions.forEach(discussion => discussion.style.display = 'none');
+  document.getElementById(subject).style.display = 'block';
+}
 
   // 顯示選中的討論區
   const selectedDiscussion = document.getElementById(subject);
@@ -87,11 +88,6 @@
       document.getElementById('navbar').style.display = 'none';
     }
 
-    function showDiscussion(subject) {
-      const discussions = document.querySelectorAll('.discussion');
-      discussions.forEach(discussion => discussion.style.display = 'none');
-      document.getElementById(subject).style.display = 'block';
-    }
 
     function createNewThread(subject) {
   const title = prompt("請輸入討論串標題：");
