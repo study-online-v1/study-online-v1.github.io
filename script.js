@@ -1,5 +1,4 @@
-<script>
-    function showDiscussion(subject) {
+  function showDiscussion(subject) {
   // 隱藏所有討論區
   const discussions = document.querySelectorAll('.discussion');
   discussions.forEach(discussion => discussion.style.display = 'none');
@@ -309,4 +308,3 @@ document.addEventListener("DOMContentLoaded", () => {
         thread.style.display = title.includes(query) ? 'block' : 'none';
       });
     }
-  </script>
